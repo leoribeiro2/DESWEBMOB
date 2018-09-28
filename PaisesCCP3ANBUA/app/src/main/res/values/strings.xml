@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Paises CCP3ANBUA</string>
+    <string name="lblContinente">Continente:</string>
+    <string name="btn_busca">Buscar</string>
+</resources>
