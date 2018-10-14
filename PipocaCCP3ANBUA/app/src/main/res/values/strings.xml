@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pipoca CCP3ANBUA</string>
+    <string name="labelGenre">Gênero:</string>
+    <string name="btnSearch">Listar Filmes</string>
+</resources>
