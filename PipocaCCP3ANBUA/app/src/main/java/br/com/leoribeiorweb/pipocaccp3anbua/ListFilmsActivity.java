@@ -6,11 +6,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
+/*
+ * Author: Leonardo Ribeiro
+ * RA: 816119319
+ * */
 public class ListFilmsActivity extends AppCompatActivity {
     public static final String KEY = "br.com.leoribeiroweb.pipoca";
     Activity activity;
@@ -28,11 +31,7 @@ public class ListFilmsActivity extends AppCompatActivity {
         names = Data.listNames(films);
 
         ListView listView = findViewById(R.id.list_films);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                this,
-                android.R.layout.simple_list_item_1,
-                names
-        );
+        FilmAdapter adapter = new FilmAdapter(this, films);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

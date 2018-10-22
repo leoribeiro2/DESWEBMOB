@@ -2,4 +2,6 @@
     <string name="app_name">Pipoca CCP3ANBUA</string>
     <string name="labelGenre">Gênero:</string>
     <string name="btnSearch">Listar Filmes</string>
+    <string name="lbl_lancamento">Lançamento:</string>
+    <string name="lbl_diretor">Diretor:</string>
 </resources>

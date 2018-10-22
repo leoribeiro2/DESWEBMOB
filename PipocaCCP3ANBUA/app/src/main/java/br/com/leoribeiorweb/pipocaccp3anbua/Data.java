@@ -1,5 +1,6 @@
 package br.com.leoribeiorweb.pipocaccp3anbua;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -39,11 +40,20 @@ public class Data {
         film = new Film();
         film.setName("Missão Impossível");
         film.setGenre("Ação");
+        film.setDirector("Brian De Palma");
+        film.setReleaseDate(LocalDate.of(1996, 07, 26));
+        film.setDescription("An American agent, under false suspicion of disloyalty, must discover " +
+                "and expose the real spy without the help of his organization.");
         films.add(film);
 
         film = new Film();
         film.setName("O Dia Depois de Amanhã");
         film.setGenre("Drama");
+        film.setDirector("Roland Emmerich");
+        film.setReleaseDate(LocalDate.of(2004, 05, 24));
+        film.setDescription("Jack Hall, paleoclimatologist, must make a daring trek from Washington" +
+                ", D.C. to New York City, to reach his son, trapped in the cross-hairs of a sudden" +
+                " international storm which plunges the planet into a new Ice Age.");
         films.add(film);
 
         return films;
