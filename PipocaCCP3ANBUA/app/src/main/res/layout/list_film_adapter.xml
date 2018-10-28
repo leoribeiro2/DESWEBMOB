@@ -6,41 +6,42 @@
 
     <ImageView
         android:id="@+id/imagem"
-        android:scaleType="fitCenter"
-        android:layout_width="50dp"
+        android:layout_width="98dp"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/ic_movie_black_24dp"
-        />
+        android:scaleType="fitCenter" />
 
     <GridLayout
-        android:useDefaultMargins="true"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:columnCount="3"
         android:rowCount="2"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent">
+        android:useDefaultMargins="true">
 
         <TextView
 
-            android:layout_column="0"
-            android:layout_row="0"
-            android:layout_columnSpan="3"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
             android:text="TextView"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
 
             />
-        <TextView
-            android:layout_columnWeight="1"
-            android:layout_column="0"
-            android:layout_row="1"
-            android:id="@+id/genre"
+
+        <RatingBar
+            android:id="@+id/voteAvarenge"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            />
+            android:layout_row="1"
+            android:layout_column="0"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="2"
+            android:stepSize="100" />
 
 
     </GridLayout>
